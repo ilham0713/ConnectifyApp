@@ -1,0 +1,8 @@
+type Connection struct {
+    UserId           string  `json:"userId" dynamodbav:"UserId"`
+    ContactId        string  `json:"contactId" dynamodbav:"ContactId"`
+    Name             string  `json:"name" dynamodbav:"Name"`
+    Birthday         *string `json:"birthday,omitempty" dynamodbav:"Birthday,omitempty"`
+    CheckInFrequency string  `json:"checkInFrequency" dynamodbav:"CheckInFrequency"`
+    CheckInDate      string  `json:"checkInDate" dynamodbav:"CheckInDate"`
+}
